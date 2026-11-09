@@ -8,16 +8,22 @@
         body {
             background-color: pink;
             color: white;
+            text-align: center; /* Centra los textos */
+            font-family: sans-serif;
+            padding: 20px;
         }
 
-        /* Estilo para que el enlace sea visible sobre fondo rosa */
-        a {
-            color: #ffffff;
-            font-weight: bold;
+        /* Contenedor para centrar el video */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
 
-        a:visited {
-            color: #f0f0f0;
+        iframe {
+            border: none;
+            border-radius: 12px;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -27,12 +33,19 @@
     <h2>Camino Nuñez Cardenas</h2>
     <p>Este es un párrafo de ejemplo para el contenido de tu sitio web.</p>
 
-    <!-- Enlace añadido -->
-    <p>
-        <a href="https://youtu.be/TTzrFxeBiUQ?si=70DIxort2_-sjHn4" target="_blank" rel="noopener noreferrer">
-            Ver video en YouTube
-        </a>
-    </p>
+    <!-- Video centrado -->
+    <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/TTzrFxeBiUQ" 
+            title="Reproductor de video de YouTube" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
 
 </body>
 </html>
+
+
